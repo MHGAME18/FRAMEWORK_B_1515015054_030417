@@ -10,6 +10,6 @@ class Peran extends Model
 	
 	public function pengguna();
 	{
-		return this->belongsToMany(pengguna::class);
+		return $this->belongsToMany(pengguna::class);
 	}
 }
